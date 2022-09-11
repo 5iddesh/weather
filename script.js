@@ -5,8 +5,9 @@ let fahrenhiet = document.querySelector('.fahrenhiet');
 let otherDetails = document.querySelectorAll('.other-details ul li');
 let city = document.querySelector('.location-details h1');
 let date = document.querySelectorAll('.location-details p');
-//let response, information;
 
+
+gettingData('bengaluru');
 
 let location1 = document.querySelector('#input');
 let searchBtn = document.querySelector('#search-btn');
@@ -50,16 +51,5 @@ fahrenhiet.addEventListener('click', ()=>{
     celcius.classList.remove('highlight');
     temperatureConversion('fahrenhiet');
 })
-
-//gettingData('tumkur');
-
-
-// setTimeout(myFunction, 5000);
-// function myFunction(){
-//     alert('Delhi weather')
-//     gettingData('delhi');
-// }
-
-
 
 
