@@ -5,7 +5,7 @@ let fahrenhiet = document.querySelector('.fahrenhiet');
 let otherDetails = document.querySelectorAll('.other-details ul li');
 let city = document.querySelector('.location-details h1');
 let date = document.querySelectorAll('.location-details p');
-
+let response, information;
 
 gettingData('bengaluru');
 
@@ -18,8 +18,8 @@ searchBtn.addEventListener('click', () => {
 });
 
 async function gettingData(location){
-    let response = await fetch(`https://api.weatherapi.com/v1/current.json?key=fb73e9659b364c268c4181724221009&q=${location}&aqi=yes`);            
-    let information = await response.json();
+    response = await fetch(`https://api.weatherapi.com/v1/current.json?key=fb73e9659b364c268c4181724221009&q=${location}&aqi=yes`);            
+    information = await response.json();
     image.src = information.current.condition.icon;
     temperature.innerText = information.current.temp_c;
     otherDetails[0].innerText = `humidity: ${information.current.humidity}`;
