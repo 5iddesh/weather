@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.search-area{
+    text-align: center;
+    margin-top: 7%;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60vw;
+    height: 40vh;
+    padding: 40px;
+    margin-inline: 20%;
+    margin-top: 8vh;
+    column-gap: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.left{
+    display: flex;
+    column-gap: 15px;
+}
+
+.other-details ul li{
+    list-style-type: none;
+}
+
+.buttons button{
+    padding: 5px;
+    color: rgba(0, 0, 0, 1);
+    border: 1px solid rgba(0, 0, 0, 0.75);
+}
+.highlight{
+    background-color: rgb(118, 158, 188);
+    color: rgba(0, 0, 0, 1);
+}
