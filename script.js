@@ -18,7 +18,7 @@ searchBtn.addEventListener('click', () => {
 });
 
 async function gettingData(location){
-    let response = await fetch(`http://api.weatherapi.com/v1/current.json?key=fb73e9659b364c268c4181724221009&q=${location}&aqi=yes`);            
+    let response = await fetch(`https://api.weatherapi.com/v1/current.json?key=fb73e9659b364c268c4181724221009&q=${location}&aqi=yes`);            
     let information = await response.json();
     image.src = information.current.condition.icon;
     temperature.innerText = information.current.temp_c;
